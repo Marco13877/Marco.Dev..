@@ -1,0 +1,74 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anniv2</title>
+</head>
+<body>
+    <form name="date">
+        <input type="text" name="jour" class="demarer" value="Démarer" onclick="f()">
+
+    </form>
+     
+
+        </div>
+    <script >
+        i=10; //1800 seconde pour 30 min
+            function f(){
+             var nom = document.forms[ "date"].elements[0].value;
+               t=setTimeout("f()",1000) 
+                    document.date.jour.value=i;
+                if(i>0){
+                    i--;
+                }else{
+                    clearTimeout(t);
+                    alert("Joyeux anniversaire 🎉")
+                    window.location.href="pro5.html"
+                }
+    
+            }
+            f();
+    </script>
+
+    <style>
+         @media (max-width: 480px) {
+        body {
+            font-size: 14px;
+        }
+    }    
+    .container {
+          width: 90%;   
+        margin: auto;
+    }
+    /* desktop */
+    body {
+      font-size: 18px;
+    }
+
+    /* Tablette */
+    @media (max-width: 768px) {
+      body {
+        font-size: 16px;
+      }
+    }
+       body{
+        background-color: rgb(255, 246, 246);
+       }
+        
+         form {
+          border-radius: 100px;
+          text-align: center;
+          padding: 500px;
+         }
+        .date{
+            background-color: darkgrey;
+            height: 500px;
+            padding: 50px;
+            position: absolute;
+            top: 50%;
+            left: 100%;
+            transform: translate;
+        }
+    </style>
+</body>
+</html>

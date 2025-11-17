@@ -1,0 +1,146 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="projoet.css">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Chango&display=swap');
+    </style>
+        
+    <title>Anniv1</title>
+</head>
+<body >
+    <nav class="val"> 
+        <div class="mon">
+            <a id="Bacceuil">Acceuil</a>
+            <a id="BContact">Contact</a>
+            <a id="Babout">About</a>
+        </div>    
+    </nav>
+    <form name="Démarer">
+        <input  class="entrer" type="text" placeholder="ton nom">
+        <a ><input type="button" class="demarer" value="Démarer" onclick="g()"></a>
+
+    </form>
+ <script>
+    document.getElementById("Bontact").addEventListener("click", ()=>{
+        document.getElementById("Contact").scrollIntoView({ behavior:"smooth"});
+    })
+    document.getElementById("Babout").addEventListener( "click", ()=>{
+        doument.getElementById( " about").scrollIntoView( {behavior: "smooth"})
+    })
+    function g(){
+        var nom = document.forms[ "Démarer"].elements[0].value;
+        if ( nom== "Honnella" ){
+            window.location.href="pro/pro4.html"
+        }else{
+            window.location.href="pro3.html" 
+            return Démarer; 
+        }
+    }
+ </script>
+
+<style>
+    @media (max-width: 480px) {
+        body {
+            font-size: 14px;
+        }
+    }    
+    .container {
+          width: 90%;   
+        margin: auto;
+    }
+    /* Styles par défaut (desktop) */
+    body {
+      font-size: 18px;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    /* Tablette */
+    @media (max-width: 768px) {
+      body {
+        font-size: 16px;
+      }
+      .navbar {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+
+      
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    .val {
+      flex-wrap: wrap;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 18px;
+      background: #111827;
+      color: #ffffff;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+    }
+
+    .navbar .brand {
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+
+    .val .mon {
+      display: flex;
+      gap: 16px;
+    }
+
+    .val a {
+      color: #ffffff;
+      text-decoration: none;
+      padding: 8px 10px;
+      border-radius: 6px;
+      transition: background 0.2s ease;
+    }
+
+    .val a:hover {
+      background: #1f2937; 
+    }
+
+    form {
+    background-color: rgb(222, 247, 239);
+    border-radius:0;
+    text-align: center;
+    padding: 500px;
+    text-size-adjust: 20px;
+    }
+    .entrer {
+        background-color: antiquewhite;
+        border-radius: 10px;
+        padding : 20px;
+        font-family: "Akaya Kanadaka", system-ui;
+        font-weight: 800;
+        font-style: normal;
+        font-size: 40px;
+    }
+    .demarer {
+    background-color: lightblue;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 120px;
+    font-family: "Chango", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size:40px;
+}
+.demarer:hover {
+    background-color: rgb(5, 159, 211);
+}
+</style>
+  
+</body>
+</html>

@@ -1,0 +1,80 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Chango&family=Eagle+Lake&display=swap');
+    </style>
+    <title>Anniv4</title>
+</head>
+<body>
+    <div class="obt">
+    <input type="text"  id="code" placeholder="Votre code de fidélité">
+    <button class="val" onclick="e()">Valider  </button>
+    </div>
+    <script>
+
+        function e(){
+            var nom = document.getElementById("code").value;
+        
+            if ( nom=="18 novembre"){
+                alert("felicitation")
+                window.location.href="pro2.html"
+            }else{
+                alert( " veuillez réessayer!")
+                return obt;
+            }
+        }
+        
+    </script>
+    <style>
+         @media (max-width: 480px) {
+        body {
+            font-size: 14px;
+        }
+    }    
+    .container {
+          width: 90%;   
+        margin: auto;
+    }
+    /* Styles par défaut (desktop) */
+    body {
+      font-size: 18px;
+    } 
+
+    /* Tablette */
+    @media (max-width: 768px) {
+      body {
+        font-size: 16px;
+      }
+    }
+        #code{
+            height: 50px;
+            width: 500px;
+            background-color: rgb(231, 222, 247);
+        }
+        body{
+            background-image: url(image1.jpeg);
+            align-items: center;
+            justify-content: center;
+        }
+        .val {
+            font-family: "Chango", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        #code {
+            font-family: "Eagle Lake", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+
+        .obt{
+            padding: 500px;
+            height: 300px;
+        }
+    </style>
+</body>
+
+</html>
